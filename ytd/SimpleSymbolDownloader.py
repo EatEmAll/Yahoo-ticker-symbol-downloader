@@ -29,10 +29,7 @@ class SymbolDownloader:
         # This method will add (prefix+)a...z to self.queries
         # This API requires the first character of the search to be a letter.
         # The second character can be a letter, number, dot, or equals sign.
-        if len(prefix)==0:
-            search_characters = first_search_characters
-        else:
-            search_characters = general_search_characters
+        search_characters = first_search_characters
 
         for i in range(len(search_characters)):
             element = str(prefix) + str(search_characters[i])
